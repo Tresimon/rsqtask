@@ -1,0 +1,9 @@
+apply from: "$rootProject.projectDir/gradle/spring-base.gradle"
+
+dependencies {
+    compile project(":rsqtech:infrastructure")
+}
+
+task unitTest( type: Test ) {
+    exclude '**/*ControllerTest*'
+}

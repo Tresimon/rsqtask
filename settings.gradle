@@ -1,0 +1,8 @@
+rootProject.name = 'rsqtech'
+
+include 'rsqtech:app'
+include 'rsqtech:infrastructure'
+include 'rsqtech:domain'
+
+
+

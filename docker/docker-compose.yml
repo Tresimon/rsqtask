@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  rsqtech_postgres:
+    container_name: rsqtech-postgres
+    image: postgres:12.2
+    restart: always
+    environment:
+      - POSTGRES_USER=rsqtech
+      - POSTGRES_PASSWORD=rsqtech
+      - POSTGRES_DB=rsqtech
+    ports:
+      - '5432:5432'
+      
